@@ -164,8 +164,78 @@
       margin-top: 6px;
     }
 
+    .accordion-content-inner ul {
+      padding-left: 18px;
+      margin-top: 6px;
+    }
+
     .accordion-content-inner li {
       margin-bottom: 4px;
+    }
+
+    .accordion-content-inner a {
+      color: var(--accent-dark);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .accordion-content-inner a:hover {
+      color: var(--text-primary);
+    }
+
+    /* Getting Started Card */
+    .getting-started-card {
+      width: 100% !important;
+      margin-bottom: 48px;
+    }
+
+    .getting-started-intro {
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin-bottom: 28px;
+      font-weight: 500;
+    }
+
+    .steps-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .step {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .step-number {
+      min-width: 40px;
+      width: 40px;
+      height: 40px;
+      background-color: var(--accent);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 16px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .step-content h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+
+    .step-content p {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.5;
     }
 
     /* Right Column Cards */
@@ -281,6 +351,48 @@
       transform: scale(0.97);
     }
 
+    /* Privacy Content Section */
+    .privacy-content {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .privacy-item {
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(212, 163, 115, 0.15);
+    }
+
+    .privacy-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .privacy-item h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .privacy-item p {
+      font-size: 12px;
+      line-height: 1.5;
+      color: var(--text-secondary);
+    }
+
+    .privacy-link {
+      color: var(--accent-dark);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .privacy-link:hover {
+      color: var(--text-primary);
+    }
+
     /* Page Footer */
     .footer {
       text-align: center;
@@ -305,6 +417,24 @@
       .card {
         padding: 24px 20px;
       }
+      .steps-container {
+        gap: 16px;
+      }
+      .step {
+        gap: 16px;
+      }
+      .step-number {
+        min-width: 36px;
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+      }
+      .step-content h3 {
+        font-size: 14px;
+      }
+      .step-content p {
+        font-size: 12px;
+      }
     }
   </style>
 </head>
@@ -317,6 +447,54 @@
       Welcome to the ReelMind Support page. We're here to help you get the most out of your AI-powered Reel companion. If you can't find the answer to your question in the FAQ below, please feel free to reach out to our team.
     </p>
   </header>
+
+  <!-- Getting Started Section -->
+  <section class="card getting-started-card" style="max-width: 1000px; margin-bottom: 48px;">
+    <h2>Getting Started with ReelMind</h2>
+    <p class="getting-started-intro">Save your first Reel in just a few taps</p>
+
+    <div class="steps-container">
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h3>Open Instagram</h3>
+          <p>Find a Reel you want to save and tap the Share icon (paper airplane)</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3>Select ReelMind</h3>
+          <p>Scroll through the share menu and tap "ReelMind" from your app options</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h3>Confirm the Save</h3>
+          <p>You'll see a "Saved!" message confirming the Reel was added to your library</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <h3>Get Notified</h3>
+          <p>ReelMind processes your Reel and sends you a notification when it's ready (typically 30–90 seconds)</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">5</div>
+        <div class="step-content">
+          <h3>View & Organize</h3>
+          <p>Open ReelMind and find your Reel organized by category in your library</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Main Content Grid -->
   <main class="container">
@@ -386,6 +564,84 @@
           </div>
         </div>
 
+        <!-- Question 5 -->
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <span>How does ReelMind organize my Reels?</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              When you save a Reel, ReelMind automatically analyzes it and sorts it into a category that matches its content — like Entertainment, Education, Lifestyle, and more. You can browse your library by category to easily find what you're looking for. ReelMind uses advanced technology to understand the content and meaning of each Reel, making organization effortless.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <span>What happens when I save a Reel?</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              After you tap "Saved!" in the share sheet, ReelMind begins processing your Reel in the background. Here's what happens:
+              <ol>
+                <li><strong>Audio Analysis:</strong> We listen to the audio and create a searchable text transcript.</li>
+                <li><strong>Category Detection:</strong> We understand the Reel's content and automatically assign it to the right category.</li>
+                <li><strong>Smart Indexing:</strong> We create a digital fingerprint of the content so you can search and organize easily.</li>
+                <li><strong>Notification:</strong> You receive a push notification when everything is complete (typically 30–90 seconds).</li>
+              </ol>
+              The entire process happens securely on our servers and respects your privacy at every step.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <span>The ReelMind share button isn't showing. What do I do?</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              If ReelMind isn't appearing in your Instagram share menu, try these steps:
+              <ol>
+                <li><strong>Make sure ReelMind is installed:</strong> Check your home screen or App Library to confirm the app is installed.</li>
+                <li><strong>Open ReelMind first:</strong> Launch ReelMind at least once to activate the share extension.</li>
+                <li><strong>Verify you're signed in:</strong> The share button only works when you're logged into ReelMind. Check your account status in the app.</li>
+                <li><strong>Restart Instagram:</strong> Close Instagram completely and reopen it.</li>
+                <li><strong>Check iOS permissions:</strong> Go to <em>Settings > Apps > ReelMind</em> and ensure all permissions are enabled.</li>
+                <li><strong>Update both apps:</strong> Make sure you have the latest version of both Instagram and ReelMind from the App Store.</li>
+              </ol>
+              If the issue persists after these steps, please <a href="#contact-section" style="color: var(--accent-dark); font-weight: 500;">contact our support team</a> with details about your device and iOS version.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <span>How long does it take to process a Reel?</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              <strong>Typical processing time: 30–90 seconds</strong>
+              <br><br>
+              The exact time depends on several factors:
+              <ul style="padding-left: 18px; margin-top: 8px;">
+                <li>Length of the audio in the Reel</li>
+                <li>Quality and clarity of the audio</li>
+                <li>Your internet connection speed</li>
+                <li>Overall server load</li>
+              </ul>
+              <br>
+              You'll receive a push notification as soon as your Reel is ready. Once notified, open ReelMind to see your Reel in its assigned category.
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -414,23 +670,37 @@
         </div>
       </section>
 
-      <!-- Privacy Matters Banner -->
-      <section class="card privacy-card">
-        <div class="privacy-info">
+      <!-- Privacy & Data Section -->
+      <section class="card" id="contact-section">
+        <div class="card-title-row">
           <!-- Shield Icon -->
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
           </svg>
-          <span>Privacy Matters</span>
+          <span>Your Data & Privacy</span>
         </div>
-        <a href="privacy.html" class="privacy-button" target="_blank">
-          <span>Privacy Policy</span>
-          <!-- External Link Icon -->
-          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="7" y1="17" x2="17" y2="7"></line>
-            <polyline points="7 7 17 7 17 17"></polyline>
-          </svg>
-        </a>
+
+        <div class="privacy-content">
+          <div class="privacy-item">
+            <h4>What We Collect</h4>
+            <p>Your email address for authentication, your saved Reels, and transcripts we create from audio. We also track basic app usage to improve your experience.</p>
+          </div>
+
+          <div class="privacy-item">
+            <h4>How We Protect It</h4>
+            <p>All your data is encrypted and stored securely. We never sell your information. You have complete control — delete your account anytime in <strong>Settings → Delete</strong>, and we permanently remove all your data.</p>
+          </div>
+
+          <div class="privacy-item">
+            <h4>External Services</h4>
+            <p>To power ReelMind, we use trusted third-party services for storage, authentication, and processing. All of these services are industry-standard and committed to data protection.</p>
+          </div>
+
+          <div class="privacy-item">
+            <h4>Questions?</h4>
+            <p>Read our full <a href="privacy.html" class="privacy-link" target="_blank">Privacy Policy</a> or <a href="mailto:deepti.jain2810@gmail.com" class="privacy-link">reach out to us</a>.</p>
+          </div>
+        </div>
       </section>
 
     </div>
