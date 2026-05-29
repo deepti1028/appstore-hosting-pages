@@ -8,6 +8,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    (function() {
+      var b64 = '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';
+      var img = new Image();
+      img.onload = function() {
+        var c = document.createElement('canvas');
+        c.width = 32; c.height = 32;
+        c.getContext('2d').drawImage(img, 0, 0, 32, 32);
+        var link = document.createElement('link');
+        link.rel = 'icon'; link.type = 'image/png';
+        link.href = c.toDataURL('image/png');
+        document.head.appendChild(link);
+      };
+      img.src = 'data:image/png;base64,' + b64;
+    })();
+  </script>
   
   <style>
     /* App Theme Color Variables */
@@ -607,10 +623,11 @@
             <div class="accordion-content-inner">
               If ReelMind isn't appearing in your Instagram share menu, try these steps:
               <ol>
-                <li><strong>Click on the share button on instagram and then click on share to, navigate to the last of the list and click on More button (...) and select the ReelMind app.</li>
+                <li><strong>Click on the share button on instagram and then, then navigate to the last of the list and click on More button (...) and select the ReelMind app.</li>
                 <li><strong>Make sure ReelMind is installed:</strong> Check your home screen or App Library to confirm the app is installed.</li>
                 <li><strong>Open ReelMind first:</strong> Launch ReelMind at least once to activate the share extension.</li>
                 <li><strong>Verify you're signed in:</strong> The share button only works when you're logged into ReelMind. Check your account status in the app.</li>
+                <li><strong>Restart Instagram:</strong> Close Instagram completely and reopen it.</li>
                 <li><strong>Check iOS permissions:</strong> Go to <em>Settings > Apps > ReelMind</em> and ensure all permissions are enabled.</li>
               </ol>
               If the issue persists after these steps, please <a href="#contact-section" style="color: var(--accent-dark); font-weight: 500;">contact our support team</a> with details about your device and iOS version.
@@ -635,7 +652,6 @@
                 <li>Your internet connection speed</li>
                 <li>Overall server load</li>
               </ul>
-              <strong>Maximum processing time: 15 Minutes</strong>
               <br>
               You'll receive a push notification as soon as your Reel is ready. Once notified, open ReelMind to see your Reel in its assigned category.
             </div>
@@ -698,7 +714,7 @@
 
           <div class="privacy-item">
             <h4>Questions?</h4>
-            <p>Read our full <a href="privacy.html" class="privacy-link" target="_blank">Privacy Policy</a> or <a href="mailto:deepti.jain2810@gmail.com" class="privacy-link">reach out to us</a>.</p>
+            <p>Read our full <a href="https://deepti1028.github.io/appstore-hosting-pages/reelmind-privacy-url/" class="privacy-link" target="_blank">Privacy Policy</a> or <a href="mailto:deepti.jain2810@gmail.com" class="privacy-link">reach out to us</a>.</p>
           </div>
         </div>
       </section>
