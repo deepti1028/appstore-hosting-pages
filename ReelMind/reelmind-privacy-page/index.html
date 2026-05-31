@@ -423,7 +423,6 @@
   <header class="site-header">
     <div class="site-header-inner">
       <div class="site-logo">ReelMind</div>
-      <div class="header-center">Privacy Policy</div>
       <div class="header-date">Effective June 1, 2026</div>
     </div>
   </header>
@@ -433,7 +432,7 @@
     <!-- Intro -->
     <div class="intro-banner">
       <h1>Privacy Policy</h1>
-      <p>We built ReelMind to help you organize the content you love — and we take your privacy seriously. Here is a clear, honest account of how we handle your data.</p>
+      <p>We built ReelMind to help you organize the content you love — and we take your privacy seriously. We’re committed to handling your data responsibly and being transparent about how we use it.</p>
     </div>
 
     <div class="main-layout">
@@ -463,7 +462,7 @@
           <div class="section-eyebrow">Section 01</div>
           <h2 class="section-title">Introduction</h2>
           <div class="section-body">
-            <p>ReelMind ("we", "our", or "us") is an iOS app that lets you save, transcribe, and organize Instagram Reels via the iOS Share Sheet. This Privacy Policy explains what data we collect when you use ReelMind, how we use it, and your rights over it.</p>
+            <p>ReelMind is an iOS app that lets you save, and organize Instagram Reels via the iOS Share Sheet. This Privacy Policy explains what data we collect when you use ReelMind, how we use it, and your rights over it.</p>
             <p>By using ReelMind, you agree to the practices described in this policy. If you have questions, you can always reach us at <a href="mailto:deepti.jain2810@gmail.com" class="inline-link">deepti.jain2810@gmail.com</a>.</p>
           </div>
         </section>
@@ -478,7 +477,7 @@
               <div class="data-group-label">Your Account</div>
               <ul class="data-list">
                 <li><strong>Email address</strong> — required to create and sign in to your account</li>
-                <li><strong>Display name</strong> — optional, set during sign-up or via Sign in with Apple / Google</li>
+                <li><strong>Display name</strong> — set during sign-up process</li>
                 <li><strong>User ID</strong> — a unique identifier assigned to your account when you register</li>
               </ul>
             </div>
@@ -501,9 +500,9 @@
             <div class="data-group">
               <div class="data-group-label">Automatically Collected</div>
               <ul class="data-list">
-                <li><strong>Push notification token</strong> — a device token used to send you save-confirmation notifications via Firebase Cloud Messaging</li>
-                <li><strong>Basic app usage</strong> — session opens, screen views, and app interactions automatically recorded by Firebase Analytics (bundled in the app)</li>
-                <li><strong>Device info</strong> — device model and iOS version, collected by Firebase Analytics</li>
+                <li><strong>Push notification token</strong> — a device token used to send you save-confirmation notifications</li>
+                <li><strong>Basic app usage</strong> — session opens, screen views, and app interactions.</li>
+                <li><strong>Device info</strong> — device model and iOS version</li>
               </ul>
             </div>
 
@@ -519,7 +518,7 @@
               <li><strong>Authentication</strong> — your email and user ID let you sign in and keep your library private</li>
               <li><strong>Processing your Reels</strong> — transcripts, captions, and hashtags are used to categorize and index your saved Reels so you can search and browse them</li>
               <li><strong>Push notifications</strong> — your device token is used solely to notify you when a Reel has been processed</li>
-              <li><strong>App improvement</strong> — Firebase Analytics usage data helps us understand which features are used so we can improve the app</li>
+              <li><strong>App improvement</strong> — Other data helps us understand which features are used so we can improve the app</li>
               <li><strong>Customer support</strong> — if you contact us, we use your email to respond</li>
             </ul>
             <div class="highlight-box">
@@ -530,48 +529,108 @@
 
         <!-- 4. AI Processing & External Services -->
         <section class="section" id="s4">
-          <div class="section-eyebrow">Section 04</div>
-          <h2 class="section-title">AI Processing &amp; External Services</h2>
-          <div class="section-body">
-            <p>To power ReelMind's core features, we send portions of your Reel data to external services for processing. Here is exactly what each service receives and why:</p>
+  <div class="section-eyebrow">Section 04</div>
+  <h2 class="section-title">AI Processing &amp; External Services</h2>
 
-            <div class="service-table">
-              <div class="service-row">
-                <div class="service-name">Groq (Whisper)</div>
-                <div class="service-desc">Receives the audio file from your saved Reel to produce a text transcript. Groq processes the audio and returns the transcript — they do not retain your audio or transcript data beyond the duration of that request.</div>
-              </div>
-              <div class="service-row">
-                <div class="service-name">Groq (Llama 3.3)</div>
-                <div class="service-desc">Receives the transcript, caption, and hashtags from your Reel to determine the most appropriate category. This text is processed and the category result is returned — it is not stored by Groq.</div>
-              </div>
-              <div class="service-row">
-                <div class="service-name">Google Gemini</div>
-                <div class="service-desc">Receives the transcript, caption, and hashtags to create a semantic fingerprint (embedding) of your Reel. This fingerprint powers search and organization within your library. Google processes the text and returns the embedding — the raw text is not retained by Google.</div>
-              </div>
-              <div class="service-row">
-                <div class="service-name">Firebase (Google)</div>
-                <div class="service-desc">Used for push notifications (Firebase Cloud Messaging) and basic usage analytics (Firebase Analytics). Firebase collects app interaction data such as session opens and screen views, linked to your device.</div>
-              </div>
-              <div class="service-row">
-                <div class="service-name">Supabase</div>
-                <div class="service-desc">Stores your account information, saved Reels, transcripts, and all other app data in an encrypted, secure cloud database. Supabase is our primary data store.</div>
-              </div>
-            </div>
+  <div class="section-body">
+    <p>
+      To power ReelMind's core features, we send portions of your Reel data to
+      external services for processing. Here is exactly what each service
+      receives and why:
+    </p>
 
-            <div class="highlight-box">
-              <strong>Your consent:</strong> When you first use ReelMind, we will ask for your consent before any Reel data is processed by these services. You can withdraw consent at any time by deleting your account.
-            </div>
-            <hr class="section-divider">                                                                                                        
-      565 +            <div class="highlight-box" style="margin-top: 0;">                                                                                  
-      566 +              <div style="font-size: 10px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: #9a7654; margin-bottom: 10
-          +px;">Third-Party Protection</div>                                                                                                               
-      567 +              <strong>Each third-party service listed above contractually commits to data protection standards equal to or greater than those de
-          +scribed in this Privacy Policy.</strong> Groq, Google (Firebase and Gemini), and Supabase are bound by their respective data processing agreemen
-          +ts and privacy frameworks — including GDPR and CCPA where applicable — which require them to handle any data we share in a manner consistent wit
-          +h your privacy rights as described here. We do not share your data with any third party that does not provide equivalent protection.            
-      568 +            </div> 
-          </div>
-        </section>
+    <div class="service-table">
+      <div class="service-row">
+        <div class="service-name">Groq (Whisper)</div>
+        <div class="service-desc">
+          Receives the audio file from your saved Reel to produce a text
+          transcript. Groq processes the audio and returns the transcript.
+        </div>
+      </div>
+
+      <div class="service-row">
+        <div class="service-name">Groq (Llama 3.3)</div>
+        <div class="service-desc">
+          Receives the transcript, caption, and hashtags from your Reel to
+          determine the most appropriate category. This text is processed and
+          the category result is returned.
+        </div>
+      </div>
+
+      <div class="service-row">
+        <div class="service-name">Google Gemini</div>
+        <div class="service-desc">
+          Receives the transcript, caption, and hashtags to create a semantic
+          fingerprint (embedding) of your Reel. This fingerprint powers search
+          and organization within your library.
+        </div>
+      </div>
+
+      <div class="service-row">
+        <div class="service-name">Firebase (Google)</div>
+        <div class="service-desc">
+          Used for push notifications (Firebase Cloud Messaging) and basic
+          usage analytics (Firebase Analytics). Firebase collects app
+          interaction data such as session opens and screen views, linked to
+          your device.
+        </div>
+      </div>
+
+      <div class="service-row">
+        <div class="service-name">Supabase</div>
+        <div class="service-desc">
+          Stores your account information, saved Reels, transcripts, and other
+          application data in a secure cloud database. Supabase is our primary
+          data store.
+        </div>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      <strong>Your consent:</strong> You choose what to save. We only save & process reels you send us.
+    </div>
+
+    <div class="highlight-box">
+  <strong>Third-Party Protection:</strong>
+  <p>
+    We carefully select third-party service providers that maintain strong
+    privacy, security, and data protection practices. Services such as Groq,
+    Google (including Gemini and Firebase), and Supabase process data on our
+    behalf solely to provide ReelMind's functionality.
+  </p>
+
+  <p>
+    These providers are subject to their own privacy policies, security
+    controls, and applicable data protection obligations. Where applicable,
+    they support compliance with regulations such as the GDPR and CCPA. We
+    strive to work only with providers whose privacy and security standards are
+    consistent with the commitments outlined in this Privacy Policy.
+  </p>
+</div>
+<!-- 
+    <div class="highlight-box" style="margin-top: 16px;">
+      <div style="font-size: 10px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: #9a7654; margin-bottom: 10px;">
+        Third-Party Protection
+      </div>
+
+      <strong>
+        We only work with service providers that maintain strong data protection
+        and security standards.
+      </strong>
+
+      <p style="margin-top: 10px; margin-bottom: 0;">
+        Groq, Google (including Gemini and Firebase), and Supabase process data
+        on our behalf under their respective privacy policies and data
+        processing commitments. Where applicable, these providers support
+        compliance frameworks such as GDPR and CCPA. We strive to use service
+        providers that offer privacy and security protections consistent with
+        the commitments described in this Privacy Policy.
+      </p>
+    </div> -->
+
+    <hr class="section-divider">
+  </div>
+</section>
 
         <!-- 5. Data Retention -->
         <section class="section" id="s5">
@@ -579,9 +638,9 @@
           <h2 class="section-title">Data Retention</h2>
           <div class="section-body">
             <ul class="data-list">
-              <li><strong>Account data and saved Reels</strong> — kept for as long as your account is active. When you delete your account, all of this data is permanently and immediately removed from our servers.</li>
+              <li><strong>Account data and saved Reels</strong> — kept for as long as your account is active. When you delete your account, your account data and saved Reels shortly after account deletion, except where retention is required for security, legal, or operational purposes.</li>
               <li><strong>Firebase Analytics usage data</strong> — retained according to Google's standard Firebase Analytics retention period (up to 14 months by default), after which it is automatically deleted.</li>
-              <li><strong>Push notification tokens</strong> — deleted when your account is deleted.</li>
+              <li><strong>Notification tokens</strong> — deleted when your account is deleted.</li>
             </ul>
             <p style="margin-top: 16px;">To delete your account and all associated data, go to <strong>Settings → Delete Account</strong> inside the ReelMind app. Deletion is immediate and permanent.</p>
           </div>
@@ -595,7 +654,7 @@
             <ul class="data-list">
               <li><strong>Access</strong> — you can view all your saved Reels and account information directly in the app</li>
               <li><strong>Deletion</strong> — delete your account and all associated data at any time via <strong>Settings → Delete Account</strong></li>
-              <li><strong>Analytics opt-out</strong> — to opt out of Firebase Analytics data collection, contact us at <a href="mailto:deepti.jain2810@gmail.com" class="inline-link">deepti.jain2810@gmail.com</a> and we will disable it for your account</li>
+              <li><strong>Analytics opt-out</strong> — to opt out of Analytics data collection, contact us at <a href="mailto:deepti.jain2810@gmail.com" class="inline-link">deepti.jain2810@gmail.com</a> and we will disable it for your account</li>
               <li><strong>Questions or requests</strong> — for any privacy-related request, email us and we will respond within 48 hours</li>
             </ul>
           </div>
@@ -608,9 +667,8 @@
           <div class="section-body">
             <ul class="data-list">
               <li>All data is transmitted over encrypted HTTPS connections</li>
-              <li>Your data is stored in Supabase with encryption at rest and row-level security — only you can access your own Reels</li>
-              <li>Authentication is handled via Supabase Auth with industry-standard JWT tokens</li>
-              <li>We do not log or store passwords in plain text</li>
+              <li>We use industry-standard authentication and security controls to protect user accounts</li>
+              <li>We do not log or store passwords in unsecured manner</li>
             </ul>
             <p style="margin-top: 14px;">While we take reasonable precautions, no system is completely immune to risk. If you believe your account has been compromised, contact us immediately.</p>
           </div>
@@ -622,7 +680,6 @@
           <h2 class="section-title">Children's Privacy</h2>
           <div class="section-body">
             <p>ReelMind is designed for use alongside Instagram. Because Instagram requires users to meet their platform's minimum age requirements, you must be old enough to have an Instagram account in your country to use ReelMind.</p>
-            <p>We do not knowingly collect personal data from children below Instagram's minimum age requirement. If you are a parent or guardian and believe your child has created a ReelMind account, please contact us at <a href="mailto:deepti.jain2810@gmail.com" class="inline-link">deepti.jain2810@gmail.com</a> and we will delete the account promptly.</p>
           </div>
         </section>
 
@@ -667,9 +724,6 @@
   <footer class="site-footer">
     <div class="site-footer-inner">
       <div class="footer-copy">&copy; 2026 ReelMind. All rights reserved.</div>
-      <div class="footer-links">
-        <a href="https://deepti1028.github.io/appstore-hosting-pages/ReelMind/reelwind-support-page/">Support</a>
-      </div>
     </div>
   </footer>
 
